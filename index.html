@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercise </title>
+</head>
+<body>
+    
+    <script>
+        
+        var num = parseInt(Math.random()*1000);
+        var hundreds = parseInt(num/100)% 10* 100;
+        var brh = parseInt(Math.round(hundreds));
+        var tenths = parseInt (num/10) %10 * 10;
+        var brt = parseInt (Math.round (tenths));
+        var ones = parseInt(num%10);
+        var bro = parseInt (Math.round(ones)); 
+        var d = new Date(); 
+
+        document.write('Randomly Generated Number: ' + num + '<br>' + "Breakdown: " + brh + ", " + brt + ", " + bro + '<br>'+ d);
+
+
+    </script>
+</body>
+</html>
